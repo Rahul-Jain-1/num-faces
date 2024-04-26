@@ -30,13 +30,13 @@ def detect_faces():
        
     # Save the uploaded file
     # file_path = '1.png'
-    img_path="images/"+file.filename
-    file.save(img_path)
+    # img_path="images/"+file.filename
+    # file.save(img_path)
 
     print("work")
 
     # Count the number of faces detected
-    num_faces =count_Faces(img_path)
+    num_faces =count_Faces(file)
     os.remove(img_path)
     # Return the number of faces detected
     return jsonify({'num_faces': num_faces})
